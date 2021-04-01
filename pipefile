@@ -1,0 +1,19 @@
+node {
+    stage("build"){
+        //
+		echo"build"
+    }
+    stage("test"){
+        //
+		echo"test"
+		bat 'robot -p . tc'
+    }
+    stage("deploy"){
+        //
+		echo"deploy"
+    }
+	stage("验收"){
+        //
+		echo"验收"
+    }
+}
